@@ -1,0 +1,26 @@
+%nav.top
+  .container
+    %ul
+      %li
+        %a{ href: "/contact-us" }Contact us
+      - if policy([:backoffice, :backoffice]).show?
+        %li
+          = link_to "Backoffice", backoffice_path,
+            class: "#{"active" if local_assigns[:section] == :backoffice}"
+      - if policy([:admin, :admin]).show?
+        %li
+          = link_to "Admin", admin_path, section: "admin",
+            class: "#{"active" if local_assigns[:section] == :admin}"
+      - if policy([:executive, :executive]).show?
+        %li
+          = link_to "Executive", executive_path, section: "admin",
+            class: "#{"active" if local_assigns[:section] == :executive}"
+      - if !user_signed_in?
+        %li
+          %strong= link_to "Login", user_checkin_omniauth_authorize_path
+      - else
+        %li
+          %i.fas.fa-user.mr-1
+          #{"%s %s" % [current_user.first_name, current_user.last_name]}
+        %li
+          %strong= link_to "Logout", destroy_user_session_path, method: :delete
