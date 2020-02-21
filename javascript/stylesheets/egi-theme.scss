@@ -1,3 +1,35 @@
-body {
+.contentbox {
+  padding-top: 5rem;
 
+  & > div {
+    justify-content: normal;
+  }
+
+  .left-column {
+    img {
+      max-width: 93%;
+      height: auto;
+    }
+  }
+  .right-column {
+    img {
+      max-width: 93%;
+      height: auto;
+      float: right;
+    }
+  }
+
+  .first {
+    padding-right: 20px;
+    max-width: 50%;
+  }
+
+  .last {
+    padding-left: 20px;
+  }
+
+  .contentbox__title {
+    font-size: 2.15rem;
+    margin-bottom: 25px;
+  }
 }
