@@ -26,10 +26,58 @@
 
   .last {
     padding-left: 20px;
+
+    ul {
+      li {
+        margin-bottom: 35px;
+        line-height: 1.25;
+
+        svg {
+          display: inline;
+          float:left;
+          margin-right: 16px;
+          font-size: 55px;
+          color: $color-primary;
+          margin-top: 3px;
+        }
+        .list-title {
+          font-size: 25px;
+          font-weight: bold;
+          color: $color-primary;
+        }
+      }
+    }
   }
 
   .contentbox__title {
     font-size: 2.15rem;
     margin-bottom: 25px;
+  }
+}
+
+.carousel-indicators {
+  left: auto;
+  right: 0;
+}
+
+.service-info-box {
+  text-align: center;
+  padding: 15px 0;
+
+  img {
+    float: none;
+    margin: auto;
+  }
+}
+
+.footer {
+  border-top: 10px solid $color-primary;
+
+  .copy-text {
+    color: $color-white;
+  }
+
+  .title {
+    color: $color-white;
   }
 }
