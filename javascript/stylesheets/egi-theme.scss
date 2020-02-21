@@ -1,19 +1,27 @@
+.main-elements {
+  height: auto;
+}
+
+.egi-hub-logo-main {
+  width: 100%;
+}
+
 .contentbox {
   padding-top: 5rem;
 
-  & > div {
-    justify-content: normal;
-  }
-
   .left-column {
+    display: inline;
+
     img {
-      max-width: 93%;
+      max-width: 96%;
       height: auto;
     }
   }
   .right-column {
+    display: inline;
+
     img {
-      max-width: 93%;
+      width: 96%;
       height: auto;
       float: right;
     }
