@@ -81,6 +81,11 @@
 .footer {
   border-top: 10px solid $color-primary;
 
+  .egi-logo-mono {
+    img {
+      max-width: 90px;
+    }
+  }
   .copy-text {
     color: $color-white;
   }
