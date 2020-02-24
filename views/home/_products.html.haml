@@ -1,0 +1,20 @@
+#tab-anchor.home-tabs.container.p-0.mt-5{ "data-controller" => "home-page" }
+
+  #tab-1.tab-content-home.current{ "data-target" => "home-page.tab" }
+    .container
+      .row
+        = render "home/products/cards",
+          cards: research_areas,
+          url: -> (ra) { services_path(research_areas: ra.to_param) },
+          default_logo: "ico_ra_default.png"
+
+  #tab-2.tab-content-home{ "data-target" => "home-page.tab" }
+    .container
+      .row
+        = render "home/products/cards",
+          cards: categories,
+          url: -> (category) { category },
+          default_logo: "ico_default.png"
+
+.row.d-flex.justify-content-center.mt-4
+  = link_to "Browse all services", services_path, class: "button button--primary"

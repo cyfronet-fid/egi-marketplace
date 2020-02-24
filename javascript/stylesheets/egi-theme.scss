@@ -89,3 +89,15 @@
     color: $color-white;
   }
 }
+
+.tab-content-home {
+
+  .col-lg-4:nth-child(3n+3) {
+    padding-right: 0;
+  }
+
+  .col-lg-4:nth-child(3n+1) {
+    padding-left: 0;
+  }
+
+}
