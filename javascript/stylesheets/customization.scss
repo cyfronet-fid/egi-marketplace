@@ -2,7 +2,6 @@
   height: auto;
 }
 
-
 .egi-hub-logo-main {
   width: 100%;
 }
@@ -106,4 +105,58 @@
     padding-left: 0;
   }
 
+}
+
+@media (max-width: 992px) {
+
+  .header {
+    .logo {
+      margin-bottom: 20px;
+    }
+  }
+
+  .contentbox {
+    .left-column {
+      margin-bottom: 30px;
+
+      img {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+    .right-column {
+
+      img {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .contentbox {
+    padding-top: 2rem;
+
+    .contentbox__title {
+      font-size: 1.75rem;
+      margin-bottom: 20px;
+    }
+
+    .first {
+      max-width: 100%;
+      margin-bottom: 30px;
+      padding-right: 0;
+    }
+    .last {
+      max-width: 100%;
+      padding-left: 0;
+
+      ul {
+        li {
+          .list-title {
+            font-size: 19px;
+          }
+        }
+      }
+    }
+  }
 }
