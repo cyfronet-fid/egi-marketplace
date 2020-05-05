@@ -1,14 +1,14 @@
 = render "layouts/sections"
 
 #mynav.overlay
-  %a.closebtn{ "href": "javascript:void(0)", "onclick": "closeNav()" } &times;
+  %a.closebtn{ "href": "javascript:void(0)", "onclick": "closeNav()" }
   .overlay-content
     .mobile-links
       %ul
         - if !user_signed_in?
           %li
             = link_to user_checkin_omniauth_authorize_path, class: "btn btn-primary" do
-              Login to EOSC marketplace
+              Login to EGI marketplace
         - else
           %li
             %a.simple-item{ href: "/projects" } My projects
@@ -22,7 +22,9 @@
       .container
         %ul.list-inline.mb-0
           %li.list-inline-item.ml-2
-            %a{ href: Mp::Application.config.portal_base_url } Info
+            %a{ href: "https://www.egi.eu/about/egi-foundation/how-to-reach-the-egi-foundation/" } Contact us
+          %li.list-inline-item.ml-2
+            %a{ href: Mp::Application.config.portal_base_url } Portal Home
           %li.list-inline-item.ml-2
             = link_to "Catalogue & Marketplace", root_path,
               class: "#{"active" if local_assigns[:section] == nil}"
@@ -48,22 +50,24 @@
     = render "services/search", categories: categories
 
     .menu.dropdown
-      %button#dropdown-menu-button.dropdown-toggle{ "aria-expanded" => "false", "aria-haspopup" => "true",
-          "data-toggle" => "dropdown", :type => "button" }
-        - if !user_signed_in?
-          = link_to user_checkin_omniauth_authorize_path, class: "menu__label" do
-            My EGI Marketplace
-        - else
+
+      - if !user_signed_in?
+        = link_to user_checkin_omniauth_authorize_path, class: "menu__label menu__label--unauth" do
+          My EGI Marketplace
+
+      - else
+        %a#dropdown-menu-button.dropdown-toggle{ "aria-expanded" => "false",
+                                                      "aria-haspopup" => "true",
+                                                      "data-toggle" => "dropdown",
+                                                      type: "button" }
           .menu__label My EGI Marketplace
-          .dropdown-menu{ "aria-labelledby" => "dropdown-menu-button" }
-            %ul
-              %li
-                %a.dropdown-item{ href: "/projects" } Projects
-              %li
-                %a.dropdown-item{ href: "/profile" } Profile
-              %li
-                = link_to "Logout", destroy_user_session_path, method: :delete,
-                 class: "dropdown-item"
+        .dropdown-menu
+          %ul
+            %li
+              %a.dropdown-item{ href: "/projects" } My projects
+            %li
+              %a.dropdown-item{ href: "/profile" } Profile
+
 
       .menu__hamburger{ "onclick": "openNav()" }
         %span

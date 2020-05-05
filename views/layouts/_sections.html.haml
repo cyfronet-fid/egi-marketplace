@@ -2,7 +2,7 @@
   .container
     %ul
       %li
-        %a{ href: "/contact-us" }Contact us
+        %a{ href: "https://www.egi.eu/about/egi-foundation/how-to-reach-the-egi-foundation/", target: "_blank"}Contact us
       - if policy([:backoffice, :backoffice]).show?
         %li
           = link_to "Backoffice", backoffice_path,
