@@ -1,0 +1,54 @@
+%main
+  .container.mt-5
+    %h1.mb-4.display-1 About us
+    .media.border-0
+      .media-body
+        .row
+          .col-xs-12.col-sm-4
+            %h3 THE EGI FEDERATION
+            %p
+              EGI is a federation of hundreds of data and compute centres worldwide and tens of cloud providers united
+              by a mission to support research activities. EGI is also committed to supporting business and innovation.
+            %p
+              The federation is governed by the participants represented in the EGI Council and coordinated by the EGI
+              Foundation, with headquarters in Amsterdam, the Netherlands.
+
+            %h4.mt-4 EGI resources are provided by:
+
+            %ul.standard-list
+              %li The EGI Federated data centres
+              %li The EGI Federated Cloud providers
+
+          .col-xs-12.col-sm-4
+            %h3 SERVICES FOR RESEARCH
+            = image_pack_tag "egi.jpg", class: "img-fluid mb-3"
+            %p
+              EGI provides both technical and human services, from integrated and secure distributed high-throughput
+              computing and cloud computing, storage and data resources to consultancy, support and co-development.
+            %p
+              The scientists relying on EGI services work in large international organisations, in research
+              infrastructures, projects, university labs, or as individual researchers.
+            %p
+              Have a look at the EGI Use Cases publication to get a glimpse of how researchers are using the EGI
+              services and how you can be a part of that.
+
+          .col-xs-12.col-sm-4
+            %h3 TESTIMONIALS
+
+            .testimonials
+              .inner
+                %span.before“
+                EGI Cloud Compute helped us to handle computational demand peaks when new data sets arrived and by
+                that sped up the whole process significantly
+                %span.after”
+            %p
+              %strong.dark K. Förstner
+
+            .testimonials
+              .inner
+                %span.before“
+                The only reasonable way to describe the role of EGI resources in my daily work is that they make
+                possible what is practically impossible to achieve using ordinary computing power.
+                %span.after”
+            %p
+              %strong.dark M. Rizzi
