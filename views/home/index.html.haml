@@ -1,0 +1,11 @@
+.container
+  = render "products",
+    research_areas: @main_research_areas,
+    categories: @root_categories
+
+  = render "info"
+
+  = render_sections("learn-more")
+
+  = render "services", services: @services
+

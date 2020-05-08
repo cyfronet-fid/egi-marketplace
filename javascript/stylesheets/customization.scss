@@ -1,0 +1,212 @@
+.main-elements {
+  height: auto;
+}
+
+.egi-hub-logo-main {
+  width: 100%;
+}
+
+.contentbox {
+  padding-top: 5rem;
+
+  .left-column {
+    display: inline;
+
+    img {
+      max-width: 96%;
+      height: auto;
+    }
+  }
+  .right-column {
+    display: inline;
+
+    img {
+      width: 96%;
+      height: auto;
+      float: right;
+    }
+  }
+
+  .first {
+    padding-right: 20px;
+    max-width: 50%;
+  }
+
+  .last {
+    padding-left: 20px;
+
+    ul {
+      li {
+        margin-bottom: 35px;
+        line-height: 1.25;
+
+        svg {
+          display: inline;
+          float:left;
+          margin-right: 16px;
+          font-size: 55px;
+          color: $color-primary;
+          margin-top: 3px;
+        }
+        .list-title {
+          font-size: 25px;
+          font-weight: bold;
+          color: $color-primary;
+        }
+      }
+    }
+  }
+
+  .contentbox__title {
+    font-size: 2.15rem;
+    margin-bottom: 25px;
+  }
+}
+
+.carousel-indicators {
+  left: auto;
+  right: 0;
+}
+
+
+.footer {
+  border-top: 10px solid $color-primary;
+
+  .egi-logo-mono {
+    img {
+      max-width: 90px;
+    }
+  }
+  .copy-text {
+    color: $color-white;
+  }
+
+  .title {
+    color: $color-white;
+  }
+}
+
+.tab-content-home {
+
+  .col-lg-4:nth-child(3n+3) {
+    padding-right: 0;
+  }
+
+  .col-lg-4:nth-child(3n+1) {
+    padding-left: 0;
+  }
+
+}
+
+@media (max-width: 992px) {
+
+  .header {
+    .logo {
+      margin-bottom: 20px;
+    }
+  }
+
+  .contentbox {
+    .left-column {
+      margin-bottom: 30px;
+
+      img {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+    .right-column {
+
+      img {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .contentbox {
+    padding-top: 2rem;
+
+    .contentbox__title {
+      font-size: 1.75rem;
+      margin-bottom: 20px;
+    }
+
+    .first {
+      max-width: 100%;
+      margin-bottom: 30px;
+      padding-right: 0;
+    }
+    .last {
+      max-width: 100%;
+      padding-left: 0;
+
+      ul {
+        li {
+          .list-title {
+            font-size: 19px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.branch-box .branch-icon img {
+  max-height: 80px;
+  height: auto;
+}
+
+.standard-list {
+  margin: 0;
+  padding: 0 0 0 20px;
+
+  li {
+    list-style: square;
+    margin-bottom: 5px;
+  }
+}
+
+.testimonials {
+  border: 1px solid;
+  border-color: #dfdede #d2d0d0 #b0afaf #d2d0d0;
+  margin: 4px 0 13px 0;
+  position: relative;
+
+  .inner {
+    border: 1px solid #fff;
+    font-size:16px;
+    font-style: italic;
+    line-height:24px;
+    padding: 14px 18px 14px 18px;
+    background: #fbfbfb;
+    background: -moz-linear-gradient(top, #fbfbfb 0%, #fefefe 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fbfbfb), color-stop(100%, #fefefe));
+    background: -webkit-linear-gradient(top, #fbfbfb 0%, #fefefe 100%);
+    background: -o-linear-gradient(top, #fbfbfb 0%, #fefefe 100%);
+    background: -ms-linear-gradient(top, #fbfbfb 0%, #fefefe 100%);
+    background: linear-gradient(to bottom, #fbfbfb 0%, #fefefe 100%);
+
+    span {
+      text-indent: -5000px;
+      display: inline-block;
+      width: 20px;
+      height: 15px;
+    }
+  }
+
+  :after {
+    content: ".";
+    display: block;
+    text-indent: -5000px;
+    position: absolute;
+    bottom: -16px;
+    left: 21px;
+    width: 15px;
+    height: 16px; }
+
+  p {
+    padding-left: 45px;
+    margin-bottom: 30px; }
+
+}
