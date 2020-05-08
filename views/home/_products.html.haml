@@ -5,7 +5,7 @@
       .row
         = render "home/products/cards",
           cards: categories,
-          url: -> (category) { category },
+          url: ->(category) { category },
           default_logo: "ico_default.png"
 
   #tab-2.tab-content-home{ "data-target" => "home-page.tab" }
@@ -13,7 +13,7 @@
       .row
         = render "home/products/cards",
             cards: research_areas,
-            url: -> (ra) { services_path(research_areas: ra.to_param) },
+            url: ->(ra) { services_path(research_areas: ra.to_param) },
             default_logo: "ico_ra_default.png"
 
 .row.d-flex.justify-content-center.mt-4
