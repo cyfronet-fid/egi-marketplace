@@ -48,10 +48,23 @@ To customize a view find it in the `marketplace/app/views`, copy it into
 defined in `egi-marketplace` from overriden view but you cannot create new view.
 
 #### Locales
-Find a key in original marketplace you wan to override and create yaml file in
-`egi-marketplace/config/locales` directory. The name of the file doesn't have to
-match original yaml file name but it is a good practice to keep naming
-convention used in the `marketplace`.
+We are using gettext gem to handle translations. To generate .po files run:
+```
+rake gettext:add_language[en]
+```
+...in the original marketplace directory!
+
+If any of the translations changed (in whitelabel or in original marketplace), run:
+```
+rake gettext:find
+```
+...which will update the .po files.
+
+To change translations to fit your whitelabel solution, edit .po files:
+```
+msgid "Original marketplace string"
+msgstr "Your string"
+```
 
 #### SCSS
 **Warning** when new SCSS is added to `egi-marketplace/javascript` directory

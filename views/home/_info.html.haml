@@ -15,35 +15,37 @@
 .contentbox
   .first
     %p.contentbox__title
-      About the Marketplace
+      = _("About the Marketplace")
 
     %p.contantbox__lead
-      We believe that having access to top scientific computing resources is essential to help researchers to be
-      competitive. The Marketplace is the entry point for researchers to discover and access the advanced computing
-      services and tools they need for their work.
+      -# haml-lint:disable MultilinePipe
+      = _("We believe that having access to top scientific computing resources is essential to help researchers to be " + |
+          "competitive. The Marketplace is the entry point for researchers to discover and access the advanced computing " + |
+          "services and tools they need for their work.") |
     %p
-      The services available in the Marketplace cover the areas of Compute, Storage and Data. The Marketplace also
-      provides Applications on demand and Training modules. All services are provided by the EGI Federation and
-      partner institutions.
+      = _("The services available in the Marketplace cover the areas of Compute, Storage and Data. The Marketplace also " + |
+          "provides Applications on demand and Training modules. All services are provided by the EGI Federation and" + |
+          "partner institutions.") |
     %p
-      The EGI Federation brings together almost 300 data and compute centres and 21 cloud providers worldwide,
-      united with a mission of supporting science and innovation.
+      = _("The EGI Federation brings together almost 300 data and compute centres and 21 cloud providers worldwide, " + |
+          "united with a mission of supporting science and innovation.") |
+      -# haml-lint:enable MultilinePipe
 
   .last
     %ul
       %li
         %i.fas.fa-check-circle
-        .list-title Easy to find
-        %p advanced filtering and lots of information on capability and service levels
+        .list-title= _("Easy to find")
+        %p= _("advanced filtering and lots of information on capability and service levels")
       %li
         %i.fas.fa-check-circle
-        .list-title Easy to access
-        %p log in with your own credentials
+        .list-title= _("Easy to access")
+        %p= _("log in with your own credentials")
       %li
         %i.fas.fa-check-circle
-        .list-title Customizable
-        %p views can be pre-defined for labs, communities and organisations
+        .list-title= _("Customizable")
+        %p= _("views can be pre-defined for labs, communities and organisations")
       %li
         %i.fas.fa-check-circle
-        .list-title Simple
-        %p purchase resources and services or access them free of charge
+        .list-title= _("Simple")
+        %p= _("purchase resources and services or access them free of charge")
