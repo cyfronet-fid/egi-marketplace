@@ -12,9 +12,9 @@
     .container
       .row
         = render "home/products/cards",
-            cards: research_areas,
-            url: ->(ra) { services_path(research_areas: ra.to_param) },
+            cards: scientific_domains,
+            url: ->(ra) { services_path(scientific_domains: ra.to_param) },
             default_logo: "ico_ra_default.png"
 
 .row.d-flex.justify-content-center.mt-4
-  = link_to "Browse all services", services_path, class: "button button--primary"
+  = link_to _("Browse all services"), services_path, class: "button button--primary"
