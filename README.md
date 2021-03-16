@@ -1,8 +1,8 @@
 # README
 
-This is an customization of the
-[Marketplace](https://github.com/cyfronet-fid/marketplace) for the
-[EGI](https://www.egi.eu/).
+This is a PoC for the EOSC MP Whitelabel solution which allows to define (and later instantiate) a customised MP platform for a community-specific use case. Customisation is scoped to the graphical and content-related elements, the set of functionailites is common and originates from the EOSC Marketplace. Every use case produces a dedicated repo. This customization of the
+[EOSC Marketplace](https://github.com/cyfronet-fid/marketplace) is dedicated for the
+[EGI](https://www.egi.eu/) use case. 
 
 ## How it works - development
 
