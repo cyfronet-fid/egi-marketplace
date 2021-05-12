@@ -13,6 +13,8 @@
           %li
             %a.simple-item{ href: "/projects" }= _("My projects")
           %li
+            %a.simple-item{ href: "/favourites" }= _("Favourite Resources")
+          %li
             %a.simple-item{ href: "/profile" }= _("Profile")
           %li
             = link_to _("Logout"), destroy_user_session_path, method: :delete,
@@ -65,6 +67,8 @@
           %ul
             %li
               %a.dropdown-item{ href: "/projects" }= _("My projects")
+            %li
+              %a.dropdown-item{ href: "/favourites" }= _("Favourite Resources")
             %li
               %a.dropdown-item{ href: "/profile" }= _("Profile")
 
